@@ -6,7 +6,11 @@
   "scripts": {
     "lint:js": "eslint .",
     "lint:css": "stylelint blocks/**/*.css styles/*.css",
-    "lint": "npm run lint:js && npm run lint:css"
+    "lint": "npm run lint:js && npm run lint:css",
+    "pages:build" :"npx @cloudflare/next-on-pages",
+    "peview":"npm run pages:build && wrangler pages dev",
+    "delploy":"npm run pages :build && wrangler pages deploy",
+    "cf-typegen" : "wrangler types  --env-interface CloudflareEnv env.d.ts"
   },
   "repository": {
     "type": "git",
