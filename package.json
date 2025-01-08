@@ -7,10 +7,10 @@
     "lint:js": "eslint .",
     "lint:css": "stylelint blocks/**/*.css styles/*.css",
     "lint": "npm run lint:js && npm run lint:css",
-    "pages:build" :"npx @cloudflare/next-on-pages",
-    "peview":"npm run pages:build && wrangler pages dev",
-    "delploy":"npm run pages :build && wrangler pages deploy",
-    "cf-typegen" : "wrangler types  --env-interface CloudflareEnv env.d.ts"
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "peview": "npm run pages:build && wrangler pages dev",
+    "delploy": "npm run pages :build && wrangler pages deploy",
+    "cf-typegen": "wrangler types  --env-interface CloudflareEnv env.d.ts"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,6 @@
     "eslint-plugin-import": "2.31.0",
     "stylelint": "16.12.0",
     "stylelint-config-standard": "36.0.1",
-    "wrangler": "^3.99.0"
+    "wrangler": "^3.100.0"
   }
 }
